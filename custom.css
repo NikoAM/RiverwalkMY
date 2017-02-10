@@ -214,7 +214,7 @@ a.btn.cta,
 span.bta.cta,
 button.btn.cta,
 input[type="submit"].btn.cta{
-       background: transparent;
+    background: transparent;
     background: linear-gradient(to bottom, transparent 50%, #fff 50%);
     background-size:100% 225%;
     background-position: left -1px;
@@ -457,7 +457,4 @@ div.banner.with-btn.with-btn .copy a{
 div.banner.with-btn .copy h1, div.banner.with-btn .copy h2, div.banner.with-btn .copy h3{  
     font-size: 2.05rem !important;
 }    
-}  
-
-
-
+}
