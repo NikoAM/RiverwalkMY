@@ -1,0 +1,123 @@
+#rewards-signup-notification {
+  left: 5%;
+  position: fixed;
+  top: 25%;
+  width: 95%;
+}
+#rewards-signup-notification .modal-dialog {
+  width: 25%;
+}
+@media screen and (max-width: 991px) {
+  #rewards-signup-notification .modal-dialog {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  #rewards-signup-notification .modal-dialog {
+    width: 95%;
+    margin: 0.625rem auto 0;
+  }
+}
+#rewards-signup-notification .success, #rewards-signup-notification .error {
+  display: none;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+#rewards-signup-notification .success > svg, #rewards-signup-notification .error > svg {
+  margin: 0 auto;
+  display: block;
+  width: 5rem;
+  height: 5rem;
+}
+#rewards-signup-notification .success h2, #rewards-signup-notification .error h2 {
+  padding: 1rem 0;
+}
+#rewards-signup-notification .success h2:after, #rewards-signup-notification .error h2:after {
+  margin-top: 1rem;
+}
+#rewards-signup-notification .success p, #rewards-signup-notification .error p {
+  color: #000;
+  text-align: center;
+  line-height: 125%;
+  margin: 0 0 1rem;
+  height: auto;
+}
+#rewards-signup-notification .success fieldset, #rewards-signup-notification .error fieldset {
+  border: 1px solid #000;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#rewards-signup-notification.thanks .success {
+  display: block;
+}
+#rewards-signup-notification.oops .error {
+  display: block;
+}
+#rewards-signup-notification .close {
+  opacity: 1;
+}
+#rewards-signup-notification .close svg {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+}
+
+.error-msg {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 75%;
+    display: none;
+}
+
+div.fieldreward {
+	transition:all 0.5s ease;
+}
+div.fieldreward input{
+	height:2.5rem;
+}
+div.fieldreward input[type="email"]{
+	font-family:'Gotham-book';
+    font-size: 0.875rem;
+    font-weight:400;
+    font-style:normal;
+    letter-spacing:normal;
+    line-height:1.7;
+    width: 66.7%;
+    padding-left: 1rem;
+    transition: all 0.5s ease;
+    outline:none;
+    border-top:1px solid black;
+    border-right: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+div.fieldreward input[type="submit"]{
+	font-family:'Gotham-Book';
+    font-size: 1rem;
+    font-weight:700;
+    font-style:normal;
+    letter-spacing:normal;
+    text-transform:uppercase;
+    padding: 0 0.75rem;
+    background:linear-gradient(to bottom, #000 50%, #fff 50%);
+    background-size:100% 225%;
+    background-position:left -1px;
+    color:#fff;
+    transition:all 0.5s ease;
+    outline:none;
+    margin-left: -5px;
+    border-top:1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left:none;
+}
+div.fieldreward input[type="submit"]:hover{
+    background-position:left 95%;
+    color:#000;
+    border-top:1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div.fieldreward input[type="hidden"]{}
