@@ -9,7 +9,7 @@
 @font-face {font-family: Gotham-Light; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Light.woff);}  
 
 li {
-    font-family:'Gotham-Book';
+     font-family:'Gotham-Book';
 }
 
 p {
@@ -35,7 +35,7 @@ h1.seaport:after, h1:after, h2:after, h2.seaport:after{
     height:2px;
 }
 h2.undefined{
-    font-family:'Gotham-Bold';
+       font-family:'Gotham-Bold';
     letter-spacing: 10px;
     text-transform: uppercase;
     margin-top:0.6em;
@@ -214,7 +214,7 @@ a.btn.cta,
 span.bta.cta,
 button.btn.cta,
 input[type="submit"].btn.cta{
-    background: transparent;
+       background: transparent;
     background: linear-gradient(to bottom, transparent 50%, #fff 50%);
     background-size:100% 225%;
     background-position: left -1px;
