@@ -1,15 +1,14 @@
-/*Fonts upload*/
-@font-face {font-family: Gotham-Black; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Black.ttf);}
 @font-face {font-family: Gotham-Black; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Black.woff);}
-@font-face {font-family: Gotham-Bold;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Bold.ttf);}
+@font-face {font-family: Gotham-Black; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Black.ttf);}
 @font-face {font-family: Gotham-Bold;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Bold.woff);}
-@font-face {font-family: Gotham-Book;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Book.ttf);}
+@font-face {font-family: Gotham-Bold;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Bold.ttf);}
 @font-face {font-family: Gotham-Book;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Book.woff);}
+@font-face {font-family: Gotham-Book;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Book.ttf);}
+@font-face {font-family: Gotham-Light; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Light.woff);}
 @font-face {font-family: Gotham-Light; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Light.ttf);}
-@font-face {font-family: Gotham-Light; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Light.woff);}  
 
 li {
-     font-family:'Gotham-Book';
+    font-family:'Gotham-Book';
 }
 
 p {
@@ -35,7 +34,7 @@ h1.seaport:after, h1:after, h2:after, h2.seaport:after{
     height:2px;
 }
 h2.undefined{
-       font-family:'Gotham-Bold';
+    font-family:'Gotham-Bold';
     letter-spacing: 10px;
     text-transform: uppercase;
     margin-top:0.6em;
