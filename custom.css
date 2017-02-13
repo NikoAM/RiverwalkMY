@@ -1,3 +1,5 @@
+/*Riverwalk*/
+/*Fonts upload*/
 @font-face {font-family: Gotham-Black; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Black.woff);}
 @font-face {font-family: Gotham-Black; src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Black.ttf);}
 @font-face {font-family: Gotham-Bold;  src: url(/etc/designs/retail-sites/Riverwalk/fonts/Gotham-Bold.woff);}
@@ -259,14 +261,14 @@ div.tabbed .tabs li a {
     text-transform: none;
 }
 
-/**/
+
 footer p, footer ul {
     font-family:'Gotham-Book';
     font-size: 0.875em;
 }
 
-/*Contacts*/
 
+/*Contacts*/
 .contact-us p span{
     font-family:'Gotham-Book';
     font-size:0.75rem;
@@ -283,6 +285,7 @@ p.hours:before {
     margin: 0 .8rem 1.5rem 0;
 }
 
+
 /*SignIn Form*/
 footer form fieldset input[type="email"]{
     font-family:'Gotham-Book';
@@ -298,11 +301,27 @@ footer form label{
 }
 
 
-
 /*Copyright*/
 footer .copyright{
     font-family:'Gotham-Book';
 }
+
+
+/*IE11/Edge fix*/
+header .mainnav nav>ul li.logo {
+    height:4rem;
+    flex: 0 0 15rem;
+}
+
+
+/*Rewards*/
+iframe#no-target {
+    height:0;
+}
+div.noHtmlText.text.parbase.section{
+    margin-bottom:4em;
+}
+
 
 /*Mobile View*/
 @media screen and (max-width: 770px){
@@ -319,6 +338,19 @@ footer .copyright{
 
 
 @media screen and (max-width: 450px){
+ 		/*Rewards*/
+     div.noHtmlText.text.parbase.section{
+    	margin-bottom:4em;
+        padding:0 1em;
+	 }
+     form#footer-email-signup.rewardsignup{
+        padding: 1em;
+     }
+     div.fieldreward input[type="email"]{
+        width:75%
+     }
+
+
      div.banner.text-align-center .copy h1 {
          font-family:'Gotham-Bold';
          text-transform: uppercase;
@@ -415,6 +447,9 @@ h2.seaport{
 
 
 @media screen and (max-width: 375px){
+	div.fieldreward input[type="email"]{
+    	width:68%;
+   	}
     a.btn.cta{
     font-size: 13px;
     width:90%;

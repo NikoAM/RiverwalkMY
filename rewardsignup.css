@@ -121,3 +121,17 @@ div.fieldreward input[type="submit"]:hover{
     border-bottom: 1px solid black;
 }
 div.fieldreward input[type="hidden"]{}
+/*IE10+ CSS fixes*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	div.fieldreward input[type="email"]{
+    font-size: 1rem;
+}
+}
+@media screen and (max-width: 1170px),(-ms-high-contrast: none), (-ms-high-contrast: active) {
+	div.fieldreward input[type="email"]{
+    	width:65%;
+   	}
+    	div.fieldreward input[type="email"]{
+    font-size: 1rem;
+	}
+}
