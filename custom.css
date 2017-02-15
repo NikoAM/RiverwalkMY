@@ -73,17 +73,28 @@ header .mainnav nav>ul li a:hover{
     letter-spacing: 1px;
 }
 
-/*Search svg fix*/
+
+/*Search fixies*/
 header .mainnav nav .header-search>a{
     width:1.25rem;
     height:1.25rem;
     flex: 0 0 1.5rem;
 }
+header .mainnav nav .header-search>div form input[type="text"]{
+    padding-left:5px;
+    width:0;
+}
+header .mainnav nav .header-search>div form input[type="text"]:focus {
+    padding-left:5px;
+    width:100%;
+}
+
 
 .section p{
     text-align:justify;
     line-height: 1.3125rem;
 }
+
 
 /*iwantto*/
 .propnav ul li{
@@ -261,12 +272,19 @@ div.tabbed .tabs li a {
     text-transform: none;
 }
 
-
-footer p, footer ul {
+div.banner .copy p{
     font-family:'Gotham-Book';
-    font-size: 0.875em;
+    text-shadow: grey 1px 1px 1px;
 }
-
+h2+p.subtitle{
+    font-family:'Gotham-Book';
+}
+h2.seaport{
+    font-family:'Gotham-Bold';
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    margin-top: 0.6em;
+}
 
 /*Contacts*/
 .contact-us p span{
@@ -312,6 +330,11 @@ header .mainnav nav>ul li.logo {
     height:4rem;
     flex: 0 0 15rem;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+    header .hhnav li:first-child svg {
+        padding-right:10em;
+    }
+}
 
 
 /*Rewards*/
@@ -322,8 +345,69 @@ div.noHtmlText.text.parbase.section{
     margin-bottom:4em;
 }
 
+/*Footer*/
+footer p{
+    height:4.5rem;
+}
+footer p, footer ul {
+    font-family:'Gotham-Book';
+    font-size: 0.875em;
+}
+.headline h3.text-left{
+   	text-align:center;
+}
+div.noHtmlText.text.parbase.section{
+        padding:0 1rem 1rem;
+        text-align:justify;
+    }
 
 /*Mobile View*/
+
+@media screen and (max-width: 1508px) and (min-width:991px) {
+    .carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.category,
+	.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
+    top:90%;
+	}
+}
+
+@media screen and (max-width: 1190px) and (min-width:990px){
+    div.banner.with-btn .copy h1{
+        font-size:2.3rem;
+    }
+    footer p{
+    height:2rem;
+}
+}
+
+@media screen and (max-width: 991px) and (min-width:426px) {
+.carousel-tile.spaced .carousel-inner .item.tile {
+    margin:0 0.5rem;
+	}
+    .carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.category{
+    top:90%;
+    left:10%;
+	}
+	.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
+    top:90%;
+    right:10%;
+	}
+	.carousel-tile .carousel-inner div.item.tile .cover .info{
+    width:90%;
+    }
+}
+
+@media screen and (max-width: 991px){
+div.banner.with-btn .copy h1, div.banner.with-btn .copy h2, div.banner.with-btn .copy h3{  
+    font-size: 2.05rem !important;
+	}
+    footer>.row:first-child>div{
+        padding-bottom:2.5rem;
+    }
+    footer p{
+    height:5rem;
+}
+}
+
 @media screen and (max-width: 770px){
     .carousel.hero-carousel .item .copy h1{
          padding: 0 4rem;
@@ -333,12 +417,11 @@ div.noHtmlText.text.parbase.section{
     }
     .carousel.hero-carousel .item .copy h1{
          letter-spacing:0.3em
+	}
 }
-}
-
 
 @media screen and (max-width: 450px){
- 		/*Rewards*/
+/*Rewards mobile*/
      div.noHtmlText.text.parbase.section{
     	margin-bottom:4em;
         padding:0 1em;
@@ -349,8 +432,6 @@ div.noHtmlText.text.parbase.section{
      div.fieldreward input[type="email"]{
         width:75%
      }
-
-
      div.banner.text-align-center .copy h1 {
          font-family:'Gotham-Bold';
          text-transform: uppercase;
@@ -404,91 +485,41 @@ div.noHtmlText.text.parbase.section{
 	div.item.featured.call-out .item-inner .info h2 {
 		line-height: 1.5rem;
 	}
+    footer p{
+    height:8rem;
 }
-
-div.banner .copy p{
-    font-family:'Gotham-Book';
-    text-shadow: grey 1px 1px 1px;
 }
-h2+p.subtitle{
-    font-family:'Gotham-Book';
-}
-h2.seaport{
-    font-family:'Gotham-Bold';
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    margin-top: 0.6em;
-}
-
-
-@media screen and (max-width: 991px) and (min-width:426px) {
-.carousel-tile.spaced .carousel-inner .item.tile {
-    margin:0 0.5rem;
-	}
-    .carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.category{
-    top:90%;
-    left:10%;
-	}
-	.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
-    top:90%;
-    right:10%;
-	}
-	.carousel-tile .carousel-inner div.item.tile .cover .info{
-    width:90%;
-    }
-}
-
-@media screen and (max-width: 1508px) and (min-width:991px) {
-    .carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.category,
-	.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
-    top:90%;
-	}
-}
-
 
 @media screen and (max-width: 375px){
 	div.fieldreward input[type="email"]{
     	width:68%;
    	}
     a.btn.cta{
-    font-size: 13px;
-    width:90%;
-    padding: 0 0;
-}
-.btn.cta.outline{
-    letter-spacing:1px;
-    text-align:center;
- }
-.carousel.hero-carousel .item .copy h1{
-    letter-spacing: 0.07em;
-                }
-h2.undefined{
-    letter-spacing:0;
-}
-.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
-    position:static;
-    float:right;
-}
-.carousel-tile .carousel-inner div.item.tile .cover .info a.category{
-    position: static;
-}
-div.banner.text-align-center .copy h1{
-	letter-spacing:3px;
-}
-div.banner.with-btn.with-btn .copy a{
-	padding:0 1rem;
-} 
-
-}
-
-@media screen and (max-width: 1190px) and (min-width:990px){
-    div.banner.with-btn .copy h1{
-        font-size:2.3rem;
+ 	   	font-size: 13px;
+ 	   	width:90%;
+  	  	padding: 0 0;
+	}
+	.btn.cta.outline{
+    	letter-spacing:1px;
+    	text-align:center;
+ 	}
+	.carousel.hero-carousel .item .copy h1{
+   		letter-spacing: 0.07em;
     }
-}
-
-@media screen and (max-width: 991px){
-div.banner.with-btn .copy h1, div.banner.with-btn .copy h2, div.banner.with-btn .copy h3{  
-    font-size: 2.05rem !important;
-}    
+	h2.undefined{
+    	letter-spacing:0;
+	}
+	.carousel-tile.no-hover .carousel-inner .item.tile .cover .info a.cta:not(.btn){
+    	position:static;
+    	float:right;
+	}
+	.carousel-tile .carousel-inner div.item.tile .cover .info a.category{
+    	position: static;
+	}
+	div.banner.text-align-center .copy h1{
+		letter-spacing:3px;
+	}
+	div.banner.with-btn.with-btn .copy a{
+		padding:0 1rem;
+	} 
 }
